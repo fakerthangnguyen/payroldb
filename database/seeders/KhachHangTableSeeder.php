@@ -24,6 +24,7 @@ class KhachHangTableSeeder extends Seeder
             ['full_name' => 'Châu', 'email' => 'chau@gmail.com', 'password' => '123', 'phone_number' => '1123213123', 'ip' => '1'],
             ['full_name' => 'Thắng', 'email' => 'ff@gmail.com', 'password' => '123', 'phone_number' => '1123213123', 'ip' => '1'],
             ['full_name' => 'Thành', 'email' => 'ff@gmail.com', 'password' => '123', 'phone_number' => '1123213123', 'ip' => '1'],
+            ['full_name' => 'chóp', 'email' => 'ff@gmail.com', 'password' => '123', 'phone_number' => '1123213123', 'ip' => '1'],
         ]);
     }
     }
