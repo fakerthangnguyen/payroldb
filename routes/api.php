@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\KhachHangController;
+use App\Http\Controllers\PayratesController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,5 +27,13 @@ Route::get('products/{id?}' ,[ProductController::class, 'index']);
 
 
 
-Route::get('employee/{idEmployee?}' ,[KhachHangController::class, 'payrol']);
+Route::get('employee/{a:idEmployee?}' ,[KhachHangController::class, 'payrol']);
+Route::get('pay_rates/{b:idPay_Rates?}' ,[PayratesController::class, 'index']);
+Route::get('users/{c:User_ID?}' ,[UsersController::class, 'index']);
+
+
+
+
+
+
 
