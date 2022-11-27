@@ -16,8 +16,13 @@ class EmployeeRequest extends FormRequest
     public function rules()
     {
         return [
-           'Vacation_Days' => 'nullable',
-           'First_Name'    => 'nullable'
+            'Employee_Number' => 'required|numeric',
+            'Vacation_Days' => 'required|numeric|min:0',
+            'PayRates_id'  => 'required|numeric|min:1|max:5',
+            'Pay_Rate' =>  'required',
+            'Paid_To_Date' => 'required|numeric|min:1|max:9',
+            'Paid_Last_Year'  => 'required|numeric|min:1|max:9',
         ];
     }
+
 }
