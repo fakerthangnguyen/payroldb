@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DashboardContronller;
+use App\Http\Controllers\KhachHangController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/login', [KhachHangController::class, 'index']);
+Route::post('/login', [KhachHangController::class, 'actionLogin']);
+Route::get('/dashboard',[DashboardContronller::class, 'index']);

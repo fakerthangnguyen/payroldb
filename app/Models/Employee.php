@@ -8,10 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
     use HasFactory;
+    public $timestamps = false;
+    protected $primaryKey = 'idEmployee';
     protected $table = 'employee';
     protected $fillable = [
-       'Employee_Number',
        'idEmployee',
+       'Employee_Number',
        'Last_Name',
        'First_Name',
        'SSN',

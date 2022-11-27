@@ -20,16 +20,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('khach_hangs/{id?}',[KhachHangController::class, 'index']);
-Route::get('categorises/{id?}' ,[CategoriesController::class, 'index']);
-Route::get('products/{id?}' ,[ProductController::class, 'index']);
+// Route::get('khach_hangs/{id?}',[KhachHangController::class, 'index']);
+// Route::get('categorises/{id?}' ,[CategoriesController::class, 'index']);
+// Route::get('products/{id?}' ,[ProductController::class, 'index']);
 
 
 
-
+//api employee
 Route::get('employee/{a:idEmployee?}' ,[KhachHangController::class, 'payrol']);
+Route::post('employee',[KhachHangController::class, 'create']);
+Route::put('employee/{a}',[KhachHangController::class, 'update']);
+Route::delete('employee/{a}',[KhachHangController::class, 'delete']);
+
+//api payrates
 Route::get('pay_rates/{b:idPay_Rates?}' ,[PayratesController::class, 'index']);
+Route::post('pay_rates',[PayratesController::class, 'create']);
+Route::put('pay_rates/{b}',[PayratesController::class, 'update']);
+Route::delete('pay_rates/{b}',[PayratesController::class, 'delete']);
+
+
+//api users
 Route::get('users/{c:User_ID?}' ,[UsersController::class, 'index']);
+Route::post('users',[UsersController::class, 'create']);
+Route::put('users/{c}',[UsersController::class, 'update']);
+Route::delete('users/{c}',[UsersController::class, 'delete']);
+
+
+
 
 
 
