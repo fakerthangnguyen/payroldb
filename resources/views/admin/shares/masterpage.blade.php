@@ -4,6 +4,8 @@
 <html lang="en">
     <head>
 @include('admin.shares.css')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
     </head>

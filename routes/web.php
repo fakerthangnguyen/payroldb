@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', [KhachHangController::class, 'index']);
 Route::post('/login', [KhachHangController::class, 'actionLogin']);
 Route::get('/dashboard',[DashboardContronller::class, 'index']);
+Route::get('/employeeData',[DashboardContronller::class, 'getData']);
