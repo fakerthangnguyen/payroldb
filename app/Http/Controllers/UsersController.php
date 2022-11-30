@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateUserRequest;
 use App\Models\usersModel;
 use Illuminate\Http\Request;
 use Throwable;
@@ -15,7 +16,7 @@ class UsersController extends Controller
             return $c;
         }
     }
-    public function create(Request $request){
+    public function create(CreateUserRequest $request){
         try{
             $user = new usersModel();
            $user->User_ID = $request->input('User_ID');

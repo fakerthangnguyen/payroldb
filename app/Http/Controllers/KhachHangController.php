@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateEmployeeRequest;
 use App\Http\Requests\EmployeeRequest;
 use App\Models\cart;
 use App\Models\categories;
@@ -22,7 +23,7 @@ class KhachHangController extends Controller
         }
     }
 
-    public function create(EmployeeRequest $request){
+    public function create(CreateEmployeeRequest $request){
 
         try {
           $employee = new Employee();
