@@ -17,13 +17,13 @@ class KhachHangController extends Controller
 
     public function payrol(Employee $a = null){
         if($a == null){
-            return Employee::orderby('First_Name', 'asc')->get();
+            return Employee::orderby('idEmployee', 'asc')->get();
         }else {
             return $a;
         }
     }
 
-    public function create(CreateEmployeeRequest $request){
+    public function create(Request $request){
 
         try {
           $employee = new Employee();
@@ -56,7 +56,7 @@ class KhachHangController extends Controller
 
     }
 
-    public function update($a, EmployeeRequest $request){
+    public function update($a, Request $request){
         try {
         $employee = Employee::find($a);
         if($employee){
