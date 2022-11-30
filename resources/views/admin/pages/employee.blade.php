@@ -2,9 +2,12 @@
 @section('content')
 
         <div  id="app" class="content">
+            <a href="" style="font-size: 16px;  ">Create new</a>
             <div  class="module">
+
                 <div class="module-head">
                     <h3>Employee</h3>
+
                 </div>
                 <div class="module-body table">
                     <table cellpadding="0" cellspacing="0"  class="datatable-1 table table-bordered table-striped	 display" width="100%">
@@ -15,6 +18,8 @@
                                 <th>SSN</th>
                                 <th>Pay Rate</th>
                                 <th>Vacation_Days</th>
+                                <th>Actions</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -25,6 +30,8 @@
                                     <td>@{{v.SSN}}</td>
                                     <td class="center">@{{v.Pay_Rate}}</td>
                                     <td class="center">@{{v.Vacation_Days}}</td>
+                                    <td><button>Edit</button> <button>Delete</button></td>
+
                                 </tr>
 
                         </tbody>
