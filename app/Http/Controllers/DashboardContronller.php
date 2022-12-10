@@ -8,14 +8,10 @@ use Illuminate\Http\Request;
 class DashboardContronller extends Controller
 {
     public function index(){
-        return view('admin.pages.employee');
+        return view('admin.pages.dashboard');
     }
 
-    public function getData(){
-        $data = Employee::get();
-
-        return response()->json([
-            'employeeData' => $data,
-        ]);
+    public function employeeCreate(){
+        return view('admin.pages.employeeCreate');
     }
 }

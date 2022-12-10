@@ -1,9 +1,9 @@
 
 <div class="sidebar">
     <ul class="widget widget-menu unstyled">
-        <li class="active"><a href="/dashboard"><i class="menu-icon icon-dashboard"></i>Dashboard
+        <li class="active"><a href="/index"><i class="menu-icon icon-dashboard"></i>Dashboard
             </a></li>
-        <li><a href="<%=request.getContextPath()%>/admin/employee/list.html"><i class="menu-icon icon-bullhorn"></i>Employee</a>
+        <li><a href="/employeeIndex"><i class="menu-icon icon-bullhorn"></i>Employee</a>
         </li>
         <li><a href="<%=request.getContextPath()%>/admin/payrates/list.html"><i class="menu-icon icon-inbox"></i>Pay Rates </a></li>
         <li><a href="task.html"><i class="menu-icon icon-tasks"></i>Tasks <b class="label orange pull-right">
