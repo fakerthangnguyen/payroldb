@@ -27,7 +27,7 @@ class EmployeeController extends Controller
         ]);
     }
     public function delete(Request $request){
-        $delete = Employee::where('Employee_Number', $request->Employee_Number)->first();
+        $delete = Employee::where('idEmployee', $request->idEmployee)->first();
         $delete->delete();
         return response()->json([
             'status'  => true,
@@ -36,7 +36,7 @@ class EmployeeController extends Controller
     }
 
     public function update(Request $request){
-        $update = Employee::where('Employee_Number', $request->Employee_Number)->first();
+        $update = Employee::where('idEmployee', $request->idEmployee)->first();
         $update->update($request->all());
         return response()->json([
             'status'  => true,
